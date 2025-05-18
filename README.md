@@ -5,4 +5,4 @@ Utility-first CSS framework tailored for Lynx Native environment.
 ## Installation
 
 ```bash
-npm install lynxTailwind
+npm install lynxwind
