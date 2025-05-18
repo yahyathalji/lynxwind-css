@@ -2,18 +2,6 @@
 /* Lynx Tailwind-like Framework - Static CSS Version */
 
 
-.input {
-  width: 200px;
-  height: 40px;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  margin: 8px 0;
-  border-radius: 8px;
-}
-
 /* =============== Layout =============== */
 .block { display: block; }
 .flex { display: flex; }
@@ -171,13 +159,17 @@
   color: #ffffff;
 }
 
-/* .input {
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  background-color: #ffffff;
-} */
+.input {
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 8px 0;
+  border-radius: 8px;
+}
 
 .input:focus {
   border-color: #ff6448;
