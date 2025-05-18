@@ -1,0 +1,19 @@
+{
+  "name": "lynxwind",
+  "version": "1.0.0",
+  "description": "Utility-first CSS framework for Lynx Native environment",
+  "keywords": [
+    "[\"lynx\"",
+    "\"css\"",
+    "\"utility\"",
+    "\"tailwind\"",
+    "\"miniapp\"]"
+  ],
+  "license": "ISC",
+  "author": "yahiaThalji",
+  "type": "commonjs",
+  "main": "src/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

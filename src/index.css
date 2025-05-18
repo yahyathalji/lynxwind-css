@@ -1,0 +1,217 @@
+
+/* Lynx Tailwind-like Framework - Static CSS Version */
+
+
+.input {
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+/* =============== Layout =============== */
+.block { display: block; }
+.flex { display: flex; }
+.grid { display: grid; }
+/* .inline { display: inline; } */
+/* .inline-block { display: inline-block; } */
+
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-1 { flex: 1 1 0%; }
+
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.items-end { align-items: flex-end; }
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+
+.gap-0 { gap: 0; }
+.gap-1 { gap: 4px; }
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.gap-4 { gap: 16px; }
+
+/* =============== Spacing =============== */
+/* Margin */
+.m-0 { margin: 0; }
+.m-1 { margin: 4px; }
+.m-2 { margin: 8px; }
+.m-3 { margin: 12px; }
+.m-4 { margin: 16px; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.my-0 { margin-top: 0; margin-bottom: 0; }
+
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 12px; }
+.mt-4 { margin-top: 16px; }
+
+/* Padding */
+.p-0 { padding: 0; }
+.p-1 { padding: 4px; }
+.p-2 { padding: 8px; }
+.p-3 { padding: 12px; }
+.p-4 { padding: 16px; }
+
+.px-1 { padding-left: 4px; padding-right: 4px; }
+.py-2 { padding-top: 8px; padding-bottom: 8px; }
+
+/* =============== Sizing =============== */
+.w-full { width: 100%; }
+.w-screen { width: 100vw; }
+.h-full { height: 100%; }
+.h-screen { height: 100vh; }
+.min-h-screen { min-height: 100vh; }
+
+.min-w-0 { min-width: 0; }
+.min-w-full { min-width: 100%; }
+
+.max-w-full { max-width: 100%; }
+.max-w-screen { max-width: 100vw; }
+
+/* =============== Typography =============== */
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 20px; }
+.text-xl { font-size: 24px; }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* .leading-none { line-height: 1; }
+.leading-tight { line-height: 1.25; }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; } */
+
+/* =============== Colors =============== */
+.text-primary { color: #ff6448; }
+.text-white { color: #ffffff; }
+.text-black { color: #000000; }
+.text-gray-500 { color: #6b7280; }
+
+.bg-primary { background-color: #ff6448; }
+.bg-white { background-color: #ffffff; }
+.bg-black { background-color: #000000; }
+.bg-gray-100 { background-color: #f3f4f6; }
+
+/* =============== Borders =============== */
+.rounded-none { border-radius: 0; }
+.rounded-sm { border-radius: 4px; }
+.rounded-md { border-radius: 8px; }
+.rounded-lg { border-radius: 16px; }
+.rounded-full { border-radius: 9999px; }
+
+.border-0 { border-width: 0; }
+.border { border-width: 1px; }
+.border-2 { border-width: 2px; }
+
+.border-primary { border-color: #ff6448; }
+.border-gray-300 { border-color: #d1d5db; }
+
+/* =============== Effects =============== */
+.shadow-sm { box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+
+.opacity-0 { opacity: 0; }
+.opacity-50 { opacity: 0.5; }
+.opacity-100 { opacity: 1; }
+
+/* =============== Interactivity =============== */
+/* .cursor-pointer { cursor: pointer; } */
+/* .user-select-none { user-select: none; } */
+
+.touch-opacity { transition: opacity 0.15s; }
+.touch-opacity:active { opacity: 0.7; }
+
+/* =============== Responsive Design =============== */
+@media (min-width: 640px) {
+  .sm-p-4 { padding: 16px; }
+  .sm-text-lg { font-size: 20px; }
+  .sm-flex { display: flex; }
+}
+
+@media (min-width: 768px) {
+  .md-p-6 { padding: 24px; }
+  .md-text-xl { font-size: 24px; }
+}
+
+/* =============== Components =============== */
+.btn{
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+
+.btn-primary {
+  background-color: #ff6448;
+  color: #ffffff;
+}
+
+/* .input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+} */
+
+.input:focus {
+  border-color: #ff6448;
+  box-shadow: 0 0 0 2px rgba(255,100,72,0.2);
+}
+
+/* =============== Utilities =============== */
+.absolute { position: absolute; }
+.relative { position: relative; }
+.top-0 { top: 0; }
+.right-0 { right: 0; }
+
+.overflow-hidden { overflow: hidden; }
+/* .overflow-auto { overflow: auto; } */
+
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+
+/* =============== Animations =============== */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* =============== Mobile Specific =============== */
+.min-touch {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.ios-pb-safe {
+  padding-bottom: 16px;
+  padding-bottom: env(safe-area-inset-bottom);
+}
